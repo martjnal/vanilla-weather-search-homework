@@ -12,21 +12,20 @@
 <body>
     <div class="weather-app">
     <header>
-        <form>
-            <input type="search" placeholder="Enter a city..." required/>
-            <input type="submit" value="Search"/>
+        <form class="search-form" id="search-form">
+            <input type="search" placeholder="Enter a city..." required class="search-form-input" id="search-form-input"/>
+            <input type="submit" value="Search" class="search-form-button"/>
         </form>
     </header>
-    <main>
-    <h1>Verona</h1>
-    <p>
-       Thursday | Mar 6 | 16:36
-    </p>
+    <main class="weather-app-main">
+    <p class="weather-app-city" id="city"> Verona </p>
+    <p class="weather-app-details">Thursday | Mar 6 | 16:36</p>
+    </main> 
     <footer>Coded by
         <a href="https://github.com/martjnal" target="_blank">Martina Lauriola</a>,
         is <a href="https://github.com/martjnal/vanilla-weather-search-homework" target="_blank">open-sourced on GitHub</a>
         and <a href="https://vanilla-weather-search-homework.netlify.app/">hosted on Netlify</a></footer>
-    </div>
-    </main>         
+    </div>    
+    <script src="src/index.js"></script>
 </body>
 </html>
